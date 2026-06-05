@@ -1,0 +1,16 @@
+insert into public.audit_logs (timestamp, event, application_id, agent, status, metadata) values
+('2026-06-05 08:45:00+00', 'Application submitted', 'APP-5832', 'Data Ingestion', 'completed', '{"county":"Nairobi","channel":"web"}'),
+('2026-06-05 08:47:00+00', 'Credit assessment completed', 'APP-5832', 'Credit Agent', 'completed', '{"score":742,"decision":"Approved"}'),
+('2026-06-05 09:02:00+00', 'Fairness audit executed', 'APP-5798', 'Governance Agent', 'completed', '{"fairness_score":94}'),
+('2026-06-05 09:18:00+00', 'Human review escalation', 'APP-5799', 'Human Review', 'escalated', '{"reason":"confidence_below_threshold"}'),
+('2026-06-05 09:31:00+00', 'Appeal filed', 'APP-5721', 'Appeals Desk', 'pending', '{"documents":2}'),
+('2026-06-05 10:04:00+00', 'Appeal approved', 'APP-5681', 'Appeals Desk', 'completed', '{"adjusted_amount":42000}'),
+('2026-06-05 10:25:00+00', 'Consent updated', 'CONS-204', 'Consent Service', 'completed', '{"research_data_sharing":true}'),
+('2026-06-05 10:44:00+00', 'Kill-switch threshold test', 'SYS-001', 'Risk Controls', 'completed', '{"bias_threshold":0.12,"result":"pass"}'),
+('2026-06-05 11:15:00+00', 'Governance review', 'GOV-114', 'Ethics Board', 'completed', '{"finding":"no_material_bias"}'),
+('2026-06-05 11:42:00+00', 'Application submitted', 'APP-5841', 'Data Ingestion', 'completed', '{"county":"Kisumu","channel":"agent"}'),
+('2026-06-05 12:03:00+00', 'Bias flag detected', 'APP-5841', 'Fairness Agent', 'escalated', '{"flag":"informal_income_penalty"}'),
+('2026-06-05 12:35:00+00', 'Decision dispatched', 'APP-5832', 'Dispatch Service', 'completed', '{"notification":"sms"}'),
+('2026-06-05 13:10:00+00', 'Fairness audit executed', 'BATCH-77', 'Governance Agent', 'completed', '{"sample_size":300}'),
+('2026-06-05 13:38:00+00', 'Model confidence breach', 'APP-5850', 'Risk Controls', 'escalated', '{"confidence":61}'),
+('2026-06-05 14:11:00+00', 'Credit bureau exchange consent checked', 'APP-5854', 'Consent Service', 'completed', '{"allowed":false}');
